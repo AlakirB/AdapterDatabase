@@ -8,3 +8,12 @@ return function (array $context) {
     return new Kernel($context['APP_ENV'], (bool) $context['APP_DEBUG']);
 };
 */
+
+require_once '';
+
+$prixEssence = new PrixEssence;
+
+$repository = new PrixEssenceRepository(
+    new DateTime(),
+    new Json()
+);
